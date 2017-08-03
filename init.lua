@@ -6,3 +6,10 @@ minetest.register_node(":technic:chernobylite_block", {
         sounds = default.node_sound_stone_defaults(),
         light_source = 2,
 })
+
+
+minetest.override_item("technic:corium_source", {
+   after_place_node = function(pos, placer, itemstack, pointed_thing)
+         minetest.remove_node(pos)
+   end,
+})
