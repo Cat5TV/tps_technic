@@ -1,5 +1,5 @@
 minetest.register_node(":technic:chernobylite_block", {
-        description = S("Chernobylite Block (Degriefed)"),
+        description = "Chernobylite Block (Degriefed)",
         tiles = {"technic_chernobylite_block.png"},
         is_ground_content = true,
         groups = {cracky=1, level=2},
