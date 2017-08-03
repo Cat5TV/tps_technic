@@ -2,7 +2,7 @@ minetest.register_node(":technic:chernobylite_block", {
         description = "Chernobylite Block (Degriefed)",
         tiles = {"technic_chernobylite_block.png"},
         is_ground_content = true,
-        groups = {cracky=1, level=2},
+        groups = {cracky=1, radioactive=0, level=2},
         sounds = default.node_sound_stone_defaults(),
         light_source = 2,
 })
