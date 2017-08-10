@@ -32,3 +32,7 @@ minetest.override_item("technic:corium_source", {
 })
 
 minetest.unregister_item("technic:bucket_corium")
+
+
+-- Temporary, until can be added to priv
+minetest.unregister_item("technic:lava_can")
