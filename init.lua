@@ -8,7 +8,7 @@ minetest.register_node(":technic:chernobylite_block", {
 })
 
 minetest.register_node( ":technic:mineral_uranium", {
-        description = S("Uranium Ore"),
+        description = "Uranium Ore",
         tiles = { "default_stone.png^technic_mineral_uranium.png" },
         is_ground_content = true,
         groups = {cracky=3, radioactive=0},
@@ -17,7 +17,7 @@ minetest.register_node( ":technic:mineral_uranium", {
 })
 
 minetest.register_node(":technic:uranium_block", {
-        description = S("Uranium Block"),
+        description = "Uranium Block",
         tiles = { "technic_uranium_block.png" },
         is_ground_content = true,
         groups = {uranium_block=1, cracky=1, level=2, radioactive=0},
