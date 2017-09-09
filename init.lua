@@ -12,6 +12,10 @@ minetest.unregister_item("technic:mineral_uranium")
 minetest.unregister_item("technic:uranium_block")
 minetest.register_alias("technic:mineral_uranium","air")
 minetest.register_alias("technic:uranium_block","air")
+minetest.unregister_item("technic:uranium35_block")
+minetest.register_alias("technic:uranium35_block","air")
+minetest.unregister_item("technic:uranium0_block")
+minetest.register_alias("technic:uranium0_block","air")
 
 minetest.override_item("technic:corium_source", {
    after_place_node = function(pos, placer, itemstack, pointed_thing)
