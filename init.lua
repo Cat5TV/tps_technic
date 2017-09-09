@@ -7,22 +7,9 @@ minetest.register_node(":technic:chernobylite_block", {
         light_source = 2,
 })
 
-minetest.register_node( ":technic:mineral_uranium", {
-        description = "Uranium Ore",
-        tiles = { "default_stone.png^technic_mineral_uranium.png" },
-        is_ground_content = true,
-        groups = {cracky=3, radioactive=0},
-        sounds = default.node_sound_stone_defaults(),
-        drop = "technic:uranium_lump",
-})
-
-minetest.register_node(":technic:uranium_block", {
-        description = "Uranium Block",
-        tiles = { "technic_uranium_block.png" },
-        is_ground_content = true,
-        groups = {uranium_block=1, cracky=1, level=2, radioactive=0},
-        sounds = default.node_sound_stone_defaults()
-})
+-- Remove Uranium altogether
+minetest.unregister_item("technic:mineral_uranium")
+minetest.unregister_item("technic:uranium_block")
 
 
 minetest.override_item("technic:corium_source", {
@@ -32,21 +19,3 @@ minetest.override_item("technic:corium_source", {
 })
 
 minetest.unregister_item("technic:bucket_corium")
-
-minetest.register_node( ":technic:mineral_uranium", {
-        description = S("Uranium Ore"),
-        tiles = { "default_stone.png^technic_mineral_uranium.png" },
-        is_ground_content = true,
-        groups = {cracky=3, radioactive=0},
-        sounds = default.node_sound_stone_defaults(),
-        drop = "technic:uranium_lump",
-})
-
-minetest.register_node(":technic:uranium_block", {
-        description = S("Uranium Block"),
-        tiles = { "technic_uranium_block.png" },
-        is_ground_content = true,
-        groups = {uranium_block=1, cracky=1, level=2, radioactive=0},
-        sounds = default.node_sound_stone_defaults()
-})
-
